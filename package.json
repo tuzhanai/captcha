@@ -1,0 +1,50 @@
+{
+  "name": "@tuzhanai/captcha",
+  "version": "1.0.0",
+  "description": "生成验证码",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/captcha.js",
+    "dist/captcha.d.ts",
+    "dist/generate_image.js",
+    "dist/generate_image.d.ts",
+    "dist/generate_text.js",
+    "dist/generate_text.d.ts"
+  ],
+  "scripts": {
+    "benchmark": "ts-node src/benchmark.ts",
+    "test": "mocha -b --require ts-node/register --require source-map-support/register --recursive --exit src/test.ts",
+    "compile": "rm -rf dist && tsc",
+    "prepublish": "npm test && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuzhanai/captcha.git"
+  },
+  "keywords": [
+    "captcha"
+  ],
+  "author": "Zongmin Lei <leizongmin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuzhanai/captcha/issues"
+  },
+  "homepage": "https://github.com/tuzhanai/captcha#readme",
+  "dependencies": {
+    "gd-bmp": "^1.2.4"
+  },
+  "peerDependencies": {
+    "@types/node": "^10.12.9"
+  },
+  "devDependencies": {
+    "@leizm/benchmark": "1.0.0",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "source-map-support": "^0.5.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
