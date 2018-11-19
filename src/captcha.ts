@@ -28,19 +28,19 @@ export const defaultCaptchaMode: Record<
     text: { size: 4, digit: true, lower: false, upper: false },
     image: {
       ...defaultGenerateImageOptions,
-      circleCount: 10,
-      pointCount: 50,
-      lineCount: 10,
-      mistyPercent: 0.2
+      circleCount: 3,
+      pointCount: 20,
+      lineCount: 0,
+      mistyPercent: 0
     }
   },
   [CaptchaMode.Medium]: {
     text: { size: 4, digit: true, lower: false, upper: true },
     image: {
       ...defaultGenerateImageOptions,
-      circleCount: 10,
-      pointCount: 50,
-      lineCount: 10,
+      circleCount: 5,
+      pointCount: 30,
+      lineCount: 5,
       mistyPercent: 0.2
     }
   },
@@ -48,10 +48,10 @@ export const defaultCaptchaMode: Record<
     text: { size: 4, digit: true, lower: false, upper: true },
     image: {
       ...defaultGenerateImageOptions,
-      circleCount: 10,
-      pointCount: 50,
-      lineCount: 10,
-      mistyPercent: 0.3
+      circleCount: 8,
+      pointCount: 40,
+      lineCount: 8,
+      mistyPercent: 0.4
     }
   }
 };

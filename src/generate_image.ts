@@ -82,9 +82,9 @@ export function generateImage(
   img.fillRect(0, 0, width, height, getRandomItem(options.backgroundColors));
 
   const drawMisty = (percent: number) => {
-    const pointCount = Math.round(options.pointCount * options.mistyPercent);
-    const circleCount = Math.round(options.circleCount * options.mistyPercent);
-    const lineCount = Math.round(options.lineCount * options.mistyPercent);
+    const pointCount = Math.round(options.pointCount * percent);
+    const circleCount = Math.round(options.circleCount * percent);
+    const lineCount = Math.round(options.lineCount * percent);
     for (let i = 0; i < pointCount; i++) {
       const x = getRandomNumber(width);
       const y = getRandomNumber(height);
