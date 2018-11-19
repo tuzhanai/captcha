@@ -24,6 +24,12 @@
 
 生成验证码
 
+| 难度模式 | 示例                         |
+| -------- | ---------------------------- |
+| Easy     | ![easy](examples/easy.bmp)   |
+| Medium   | ![easy](examples/medium.bmp) |
+| Hard     | ![easy](examples/hard.bmp)   |
+
 ## 安装
 
 ```bash
