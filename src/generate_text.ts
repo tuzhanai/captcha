@@ -41,9 +41,10 @@ export function generateText(
   if (options.digit) chars += digitChars;
   if (options.lower) chars += lowerChars;
   if (options.upper) chars += upperChars;
+  const lens = chars.length;
   let result = "";
   for (let i = 0; i < options.size; i++) {
-    result += chars[getRandomNumber(chars.length)];
+    result += chars[getRandomNumber(lens)];
   }
   return result;
 }
